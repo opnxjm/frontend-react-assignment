@@ -1,7 +1,23 @@
 .App {
   text-align: center;
 }
-
+.y{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.n{
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 0px;
+  font-size: 10px;
+  text-decoration: none;
+}
+a.active{
+  color: red;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
