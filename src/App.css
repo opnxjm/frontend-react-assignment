@@ -1,6 +1,23 @@
 .App {
   text-align: center;
 }
+img{
+  width: 150px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(85, 85, 85, 0.2), 0 6px 20px 0 rgba(85, 85, 85, 0.2);
+}
+button{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: rgb(187, 145, 225);
+  border: none;
+  border-radius: 5px;
+  color: rgb(9, 9, 9);
+  width: 50px;
+  height: 30px;
+}
 .y{
   text-align: center;
   justify-content: center;

@@ -1,19 +1,16 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function LoginPage({ setUserLoggedIn }) {
+function LoginPage({setUserLoggedIn}) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Check if username and password are valid
-    if (username === "admin" && password === "password") {
-      // Set userLoggedIn state variable to true
+    if (username === "1" && password === "2") {
       setUserLoggedIn(true);
-      // Navigate to the admin page
-      navigate("/admin");
+      navigate("/Admin");
     } else {
       alert("Invalid username or password");
     }
@@ -25,11 +22,11 @@ function LoginPage({ setUserLoggedIn }) {
       <form onSubmit={handleSubmit}>
         <label>
           Username:
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} /><br/>
         </label>
         <label>
           Password:
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} /><br/>
         </label>
         <button type="submit">Login</button>
       </form>

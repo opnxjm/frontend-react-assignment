@@ -5,7 +5,7 @@ function About(){
         <>
             <h1 className="name">This is About page</h1>
             <button style={{
-                margin: '0 auto',
+                margin: "0 auto",
                 display: "flex",
                 backgroundImage: "linear-gradient(to right, #3acadf, #651fff 95%)",
                 color: "white",
@@ -20,12 +20,3 @@ function About(){
     );
 }
 export default About;
-// const buttonStyle = {
-//     width: "10%",
-//     color:"white",
-//     backgroundColor: "#630dcc",
-//     marginBottom:"30px",
-//     marginTop:"10px",
-//     fontWeight: "bold",
-//     fontSize:"12px",
-//   }
