@@ -15,6 +15,8 @@ function About(){
                 fontWeight: "bold",
                 fontSize: "13px",
                 width: "6%",
+                alignItems: "center",
+                justifyContent: "center",
             }} onClick={() => navigate("/")}>Redirect</button>
         </>
     );

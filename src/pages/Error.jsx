@@ -1,14 +1,13 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
-function LoginPage({setUserLoggedIn}) {
+import { useState } from "react";
+function Error({ setUserLoggedIn }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username === "1" && password === "2") {
+    if (username === "tn" && password === "wanttosleep") {
       setUserLoggedIn(true);
       navigate("/Admin");
     } else {
@@ -22,16 +21,24 @@ function LoginPage({setUserLoggedIn}) {
       <form onSubmit={handleSubmit}>
         <label>
           Username:
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} /><br/>
-        </label>
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </label><br/>
         <label>
           Password:
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} /><br/>
-        </label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </label><br/>
         <button type="submit">Login</button>
       </form>
     </div>
   );
 }
 
-export default LoginPage;
+export default Error;

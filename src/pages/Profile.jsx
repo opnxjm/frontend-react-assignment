@@ -3,7 +3,7 @@ function Profile() {
     const { id } = useParams();
     return(
         <>
-            <h1>{id}</h1>
+            <p>This Student ID of user is { id }</p>
         </>
     );
 }

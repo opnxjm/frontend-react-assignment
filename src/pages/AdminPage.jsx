@@ -1,10 +1,11 @@
 import { useNavigate } from "react-router-dom";
+import tired from "../asset/tired.png"
 function AdminPage() {
     const navigate = useNavigate();
     return (
         <>
-            {/* <img src="asset/tired.png"></img> */}
-            <img src="../asset/tired.png"></img>
+            {/* <img src="../asset/tired.png"></img> */}
+            <img src={tired}></img>
             <h1 style={{
                 margin: "10px auto",
                 display: "flex",
